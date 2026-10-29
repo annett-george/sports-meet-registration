@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR Sports Meet 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>CMR Sports Meet 2026</h1>
+        <h2>About Me</h2>
+        <p>I am Annett George, a 3rd year Computer Science Engineering Student at CMR college of Engineering and technology, I want to become a Software Engineer, and passionate about learning DSA and full stack development</p>
+        <h2>Purpose</h2>
+        <p>I am conducting a Sports Event in my college, and interested students can enter their details in the below form</p>
+        <hr>
+        <form id="registration-form">
+            <h2>Registration form</h2>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gen" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gen" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Sports</legend>
+                <input type="checkbox" id="volleyball" name="sports[]" value="volleyball">
+                <label for="volleyball">Volleyball</label><br>
+                <input type="checkbox" id="kabaddi" name="sports[]" value="kabaddi">
+                <label for="kabaddi">Kabaddi</label><br>
+                <input type="checkbox" id="cricket" name="sports[]" value="cricket">
+                <label for="cricket">Cricket</label><br>
+                <input type="checkbox" id="khokho" name="sports[]" value="khokho">
+                <label for="khokho">Kho Kho</label><br>
+                <input type="checkbox" id="football" name="sports[]" value="football">
+                <label for="football">Football</label><br>
+            </fieldset><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="msg"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
