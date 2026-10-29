@@ -6,12 +6,12 @@ form.addEventListener("submit", function(event){
     const sports = document.querySelectorAll('input[name="sports[]"]:checked');
     const selectedSports = Array.from(sports).map(sport=>sport.value);
     if(selectedSports.length===1){
-        msg.textContent=`${uname.value}, your registration was successful, the sport you have choosen is ${selectedSports.join(", ")}`;
+        msg.textContent=`${uname.value}, your registration was successful, the sport you have chosen is ${selectedSports.join(", ")}.`;
     }
     else if(selectedSports.length===0){
-        msg.textContent=`${uname.value}, your registration was successful, no sport choosen`;
+        msg.textContent=`${uname.value}, your registration was successful, no sport chosen.`;
     }
     else{
-    msg.textContent=`${uname.value}, your registration was successfull, the sports you have choosen are ${selectedSports.join(", ")}`;
+    msg.textContent=`${uname.value}, your registration was successful, the sports you have chosen are ${selectedSports.join(", ")}.`;
     }
 });
